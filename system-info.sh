@@ -26,10 +26,8 @@ echo ""
 echo "Last Five Log Entries Containing Error:"
 if [ -r /var/log/syslog ]; then
   grep -i "error" /var/log/syslog | tail -n 5
-elif command -v journalctl1 >/dev/null 2>&1; then
-  journalctl --no-pager 2>/dev/null |grep -i "error" | tail -n 5
 else
-  echo "System logs unavailable."
+  sudo journalctl --no-pager | grep -i "error" | tail -n 5
   fi
   echo ""
   echo "===== EXTRA CREDIT INFORMATION ====="
