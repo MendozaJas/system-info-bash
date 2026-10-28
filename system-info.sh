@@ -30,6 +30,8 @@ else
   sudo journalctl --no-pager | grep -i "error" | tail -n 5
   fi
   echo ""
+  echo "System Uptime:"
+  uptime -p
   echo "===== EXTRA CREDIT INFORMATION ====="
   echo ""
   echo "Current Date and Time;"
