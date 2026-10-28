@@ -1,4 +1,4 @@
-#! /.bin/bash
+#!/.bin/bash
 LOGFILE="system-report.txt"
 {
 echo ""
