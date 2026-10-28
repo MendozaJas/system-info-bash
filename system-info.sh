@@ -4,8 +4,8 @@ echo "Hostname:"
 hostname
 echo "Current User:"
 whoami
-echo "Operating SYstwm:"
-uptime
+echo "Operating System:"
+cat /etc/os-release
 echo "Kernel Version:"
 uname -r
 echo "Memory Information:"
